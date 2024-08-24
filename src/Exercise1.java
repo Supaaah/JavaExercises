@@ -26,29 +26,31 @@ public class Exercise1 {
         scanner.close();
     }
 
-    private static int performCalculation(List<Integer> values, char operator) {
-        int result = values.get(0);
-        switch (operator){
-            case '+':
-                for(int i = 1;i<values.size();i++){
-                    result+=values.get(i);
-                }
-                break;
-            case '*':
-                for(int i=1;i<values.size();i++){
-                    result*=values.get(i);
-                }
-                break;
-            default:
-                return Integer.MIN_VALUE;
+    private static int add(List<Integer> values, int index, int sum) {
+        if (index >= values.size()) {
+            return sum;
         }
-        return result;
+        return add(values, index + 1, sum + values.get(index));
+    }
+    private static int mul(List<Integer> values, int index, int product) {
+        if (index >= values.size()) {
+            return product;
+        }
+        return mul(values, index + 1, product * values.get(index));
+    }
+
+    private static int performCalculation(List<Integer> values, char operator) {
+        return switch (operator) {
+            case '+' -> add(values, 1, values.get(0));
+            case '*' -> mul(values, 1, values.get(0));
+            default -> Integer.MIN_VALUE;
+        };
     }
 
     private static List<Integer> getValues(Scanner scanner, int numberOfValues) {
         List<Integer> values = new ArrayList<>();
         for (int i = 0; i < numberOfValues; i++) {
-            int value = getNumberInput(scanner, "Enter Number " + (i + 1) + ": ");
+            int value = getNumberInput(scanner, STR."Enter Number \{i + 1}: ");
             values.add(value);
         }
         return values;
@@ -68,8 +70,15 @@ public class Exercise1 {
     }
 
     private static int getNumberInput(Scanner scanner, String prompt) {
-        System.out.print(prompt);
-        return scanner.nextInt();
+        while (true) {
+            System.out.print(prompt);
+            if (scanner.hasNextInt()) {
+                return scanner.nextInt();
+            } else {
+                System.out.println("Invalid input. Please enter a valid integer.");
+                scanner.next();
+            }
+        }
     }
 
     private static char getOperatorInput(Scanner scanner) {
@@ -78,6 +87,6 @@ public class Exercise1 {
     }
 
     private static void displayResult(int result) {
-        System.out.println("Result is = " + result);
+        System.out.println(STR."Result is = \{result}");
     }
 }
