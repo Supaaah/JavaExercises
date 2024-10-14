@@ -15,17 +15,29 @@ public class BlackJack{
         int yourCard2 = drawRandomCard();
 
         System.out.println("\n You get a \n" + cardString(yourCard1) + "\n and a \n" + cardString(yourCard2));
-        int total = Math.min(yourCard1,10) + Math.min(yourCard2,10);
+        int total = cardValue(yourCard1) + cardValue(yourCard2);
         System.out.println("your total is: " + total);
         
         int dealerCard1 = drawRandomCard();
         int dealerCard2 = drawRandomCard();    
         
         System.out.println("\n" + dealerCard1 + "\nand has a card facing down \n" + faceDown());
-        int dealerTotal = Math.min(dealerCard1,10) + Math.min(dealerCard2,10);
+        int dealerTotal = cardValue(dealerCard1) + cardValue(dealerCard2);
         System.out.println("\nThe dealer's total is hidden");
-        
-        while(true){
+
+        deterMineWinner(total,delearTotal);
+        }
+         scan.close();
+    }
+    public static int cardValue(int card){
+        return Math.min(card,10);
+    }
+    public static int drawRandomCard(){
+        int randomNum = (int) (Math.random() * 13) + 1;
+        return randomNum;
+    }
+    public static void deterMineWinner(int total, int dealerTotal){
+         while(true){
             String choice = hitOrStay();
             if (choice.equalsIgnoreCase("stay")) {
                 break;
@@ -39,19 +51,7 @@ public class BlackJack{
                 System.out.println("Bust! Player loses");
                 System.exit(0);
             }
-        }
-
-
-        
-        //For tasks 9 to 13, see the article: Blackjack Part II. 
-         scan.close();
-
     }
-    public static int drawRandomCard(){
-        int randomNum = (int) (Math.random() * 13) + 1;
-        return randomNum;
-    }
- 
     public static String cardString(int cardNumber){
         switch(cardNumber){
             case 1:   
