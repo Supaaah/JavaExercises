@@ -71,6 +71,9 @@ public class Hangman {
     public static void main(String[] args) {
         
         Scanner scan = new Scanner(System.in);
+        System.out.println("--------------------------");
+        System.out.println("Welcome to HANGMAN GAME \nGuess the word or die!");
+        System.out.println("--------------------------\n\n");
         String word = getRandomWord();
         char [] guessWord = guessTheWord(word);
         int incorrectGuess = 0;
