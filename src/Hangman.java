@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Hangman {
 
     public static String[] words = {"ant", "baboon", "badger", "bat", "bear", "beaver", "camel",
@@ -67,14 +69,70 @@ public class Hangman {
     " =========\n"};
 
     public static void main(String[] args) {
-
-
-
-
-
-
+        
+        Scanner scan = new Scanner(System.in);
+        String word = getRandomWord();
+        char [] guessWord = guessTheWord(word);
+        int incorrectGuess = 0;
+        boolean isGameWon = false;
+        while(incorrectGuess<gallows.length - 1 && !isGameWon){
+            printGallows(incorrectGuess);
+            printGuessedWord(guessWord);
+            char guess = getUserGuess(scan);
+            if(word.contains(String.valueOf(guess))){
+                updateGuessedWord(guessWord, word, guess);
+            }else{
+                incorrectGuess++;
+            }
+            isGameWon = isWordGuessed(guessWord);
+        }
+        if(isGameWon){
+            System.out.println("Congratulations! You've guessed the word: "+ word);
+        }else{
+            System.out.println("Game Over! The word was: "+ word);
+        }
     }
 
+    public static String getRandomWord(){
+        int randomIndex = (int) (Math.random()*words.length);
+        return words[randomIndex];
+    }
+
+    public static char [] guessTheWord(String word){
+        char [] guessedWord = new char[word.length()];
+        for(int i = 0; i<word.length();i++){
+            guessedWord[i] = '_';
+        }
+        return guessedWord;
+    }
+    public static char getUserGuess(Scanner scan){
+        System.out.print("Enter a letter: ");
+        return scan.next().charAt(0);
+    }
+    public static boolean isWordGuessed(char [] guessWord){
+        for(char c: guessWord){
+            if(c == '_'){
+                return false;
+            }
+        }
+        return true;
+    }
+    public static void updateGuessedWord(char [] guessWord, String word, char guess){
+        for(int i =0;i<word.length();i++){
+            if(word.charAt(i) == guess){
+                guessWord[i] = guess;
+            }
+        }
+    }
+    public static void printGallows(int incorrectGuess){
+        System.out.println(gallows[incorrectGuess]);
+    }
+    public static void printGuessedWord(char[] guessWord){
+        for(char c: guessWord){
+            System.out.print(c + " ");
+        }
+        System.out.println();
+    }
 }
 
 
