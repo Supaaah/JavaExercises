@@ -1,0 +1,175 @@
+Java Exercises
+
+Conversion Programs
+
+1. Write Java program to Convert a short integer into a string
+2. Write Java program to Convert an Integer to String
+3. Write Java program to Convert Double to String
+4. Write Java program to Convert a Long to String
+5. Write Java program to Convert Float to String
+6. Write Java program to Convert String to Float
+7. Write Java program to Convert String to Long
+8. Write Java program to Convert String to Double
+9. Write Java program to Convert String to Integer
+
+If Statements
+1. Write a program to find maximum between two numbers
+2. Write a program to find maximum between three numbers
+3. Write a program to check whether a number is negative, positive or zero
+4. Write a program to check whether a number is divisible by 5 and 11 or not
+5. Write a program to check whether a number is even or odd
+6. Write a program to check whether a year is leap year or not
+7. Write a program to check whether a character is alphabet or not
+8. Write a program to input any alphabet and check whether it is vowel or consonant
+9. Write a program to input any character and check whether it is alphabet, digit or special character
+10. Write a program to check whether a character is uppercase or lowercase alphabet
+11. Write a program to input week number and print weekday
+12. Write a program to input month number and print month Name
+13. A company insures its drivers in the following cases:
+a. If the driver is married
+b. If the driver is unmarried, male & above 30 years of age
+c. If the driver is unmarried, female & above 25 years of age
+14. Write a program to calculate the salary as per the following table
+
+
+Looping Statement
+1. Write a program to print all alphabets from a to z
+2. Write a program to print reverse alphabets from Z to A
+3. Write a program to print all even numbers between 1 to 100
+4. Write a program to print all odd number between 1 to 100
+5. Write a program to reverse the given Digits
+6. Write a program to sum of its Digits
+7. Write Java program to count total number of words in a string
+8. Write Java program to print used different characters (letters) in a string
+
+Array
+
+1. Write a program to Sort Numeric Array In Ascending Order
+a. Sample Output
+Array = {23, 5, 67, 20, 3, 30, 79, 3, 70, 2}
+Ascending Order = {2, 3, 3, 5, 20, 23, 30, 67, 70, 79}
+
+2. Write a program to Sort Numeric Array In Descending Order
+a. Sample Output
+Array = {23, 5, 67, 20, 3, 30, 79, 3, 70, 2}
+Descending Order = {79, 70, 67, 30, 23, 20, 5, 3, 3, 2}
+
+3. Write a program to print sum values of an array
+a. Sample Output
+Array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+Sum Values of Array = 55
+
+4. Write a program to calculate the average value of array elements
+a. Sample Output
+Array = {1, 2, 3, 4, 5}
+Sum of Array Value : 15
+Average of Array Value : 3.0
+
+5. Write a program to store elements in an array and print it
+a. Sample Output
+Array Size = 5
+Element of a[0] = 5
+Element of a[1] = 11
+Element of a[2] = 22
+Element of a[3] = 33
+Element of a[4] = 44
+
+Display Array Elements:
+5
+11
+22
+33
+44
+
+6. Write a program to array elements print all Odd number
+a. Sample Output
+Array = {23, 45, 67, 34, 78}
+Odd Array Elements = 23 45 67
+
+7. Write a program to array elements print all Even number
+a. Sample Output
+Array = {23, 45, 89, 34, 12}
+Even Array Elements = 34 12
+
+8. Write a program to array elements to print sum of Odd Numbers
+a. Sample Output
+Array = {12, 34, 59, 45, 22}
+Sum of Odd Array Elements = 104
+
+9. Write a program to array elements to print sum of Even Numbers
+a. Sample Output
+Array = {56, 78, 45, 79, 34}
+Sum of Even Array Elements = 168
+
+10. Write a program to merge two arrays elements to store third array
+a. Sample Output
+First Array = {1, 2, 3, 4, 5}
+First Array = {6, 7, 8, 9, 10}
+Merge two Array Elements = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+
+11. Write a program to array elements print all Positive number
+a. Sample Output
+Array = {67, -4, 3, -5, 44}
+Positive Array Elements = {67, 3, 44}
+
+12. Write a program to array elements print all Negative number
+a. Sample Output
+Array = {-45, 32, -7, 3, -6}
+Negative Array Elements = {-45, -7, -6}
+
+13. Write a program to search an element in an array
+a. Sample Output
+Array = {10, 20, 30, 40, 50}
+Search Array Elements = 30
+Element is Found in the Position = 3
+Element is Found in the Index = 2
+
+14. Write a program to Delete Duplicate Elements from an Array
+a. Sample Output
+Array = {10, 10, 20, 20, 30}
+After Remove Duplicate Array Elements = {10, 20, 30 }
+
+15. Write a program to Print Unique Elements in Array
+a. Sample Output
+Array = {10, 20, 40, 20, 10}
+Display Array Unique Elements = {10, 20, 40 }
+
+16. Write a program to find the second smallest element in an array
+a. Sample Output
+Array = {10, 20, 5, 2, 30}
+Second Smallest Element = 5
+
+Date Time
+
+1. Write a Java program to print LocalDate yyyy-MM-dd
+2. Write a Java program to print LocalTime HH:mm:ss
+3. Write a Java program to print LocalTime and LocalDate yyyy-MM-dd HH:mm:ss
+4. Write a Java program to display current date without time and current time without date
+5. Write a Java program to calculate the difference between two dates in days
+6. Write a Java program to convert a string to date
+7. Write a Java program to get the dates 10 days before and after today
+8. Write a Java Program to Add years to the current date
+9. Write a Java Program to Add months to the current date
+10. Write a Java Program to Subtract days from the current date
+11. Write a Java Program to Add days to the current date
+12. Write a Java Program to Parse individual components of date from the current date
+13. Write a Java Program to Parse individual components of date from a string
+
+String
+
+1. Write a Java program to concatenate Two strings
+2. Write a Java program to get the character at the given index within the String
+3. Write a Java program to concatenate a given string to the end of another string
+4. Write a Java program to check whether a given string ends with the contents of another string
+5. Write a Java program to convert all the characters in a string to Lowercase
+6. Write a Java program to convert all the characters in a string to Uppercas
+7. Write a java program to get the length of a given string
+8. Write a Java program to replace a specified character with another character
+9. Write a Java program to replace each substring of a given string that matches the given regular expression with the given replacement
+10. Write a Java program to check whether a given string starts with the contents of another string
+11. Write a Java program to get a substring of a given string between two specified positions
+12. Write a Java program to trim any leading or trailing whitespace from a given string
+13. Write a Java program to check if the letter 'x' is present in the word 'String Exercises'
+14. Write a program to Replace string with another string in java using String.replace() method
+15. Write a program to Convert any type of value to string value using String.valueOf() method
+16. Write a program to Compare the strings using equals(), compareTo() and == operator
