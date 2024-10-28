@@ -2,40 +2,24 @@ import java.util.Scanner;
 
 public class SalaryCalculator {
 
+    private static final int EXPERIENCED_YEARS = 10;
+
     public static double calculateSalary(String gender, int yearsOfService, String qualification) {
-        double salary = 0;
+        boolean isExperienced = yearsOfService >= EXPERIENCED_YEARS; //true if > 10 false < 10
 
         if (gender.equalsIgnoreCase("Male")) {
-            if (yearsOfService >= 10) {
-                if (qualification.equalsIgnoreCase("Post Graduate")) {
-                    salary = 15000;
-                } else if (qualification.equalsIgnoreCase("Graduate")) {
-                    salary = 10000;
-                }
-            } else {
-                if (qualification.equalsIgnoreCase("Post Graduate")) {
-                    salary = 10000;
-                } else if (qualification.equalsIgnoreCase("Graduate")) {
-                    salary = 7000;
-                }
+            if (qualification.equalsIgnoreCase("Post Graduate")) {
+                return isExperienced ? 15000 : 10000;
+            } else {  // Graduate
+                return isExperienced ? 10000 : 7000;
             }
-        } else if (gender.equalsIgnoreCase("Female")) {
-            if (yearsOfService >= 10) {
-                if (qualification.equalsIgnoreCase("Post Graduate")) {
-                    salary = 12000;
-                } else if (qualification.equalsIgnoreCase("Graduate")) {
-                    salary = 9000;
-                }
-            } else {
-                if (qualification.equalsIgnoreCase("Post Graduate")) {
-                    salary = 10000;
-                } else if (qualification.equalsIgnoreCase("Graduate")) {
-                    salary = 6000;
-                }
+        } else {  // Female
+            if (qualification.equalsIgnoreCase("Post Graduate")) {
+                return isExperienced ? 12000 : 10000;
+            } else {  // Graduate
+                return isExperienced ? 9000 : 6000;
             }
         }
-
-        return salary;
     }
 
     public static void main(String[] args) {
