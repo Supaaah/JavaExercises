@@ -1,3 +1,5 @@
+package TryingOut;
+
 public class ReturnTrueCount {
     public static void main(String[] args) {
         boolean[] testArray = {true, true, false, true, false, true};

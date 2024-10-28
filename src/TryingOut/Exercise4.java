@@ -1,3 +1,5 @@
+package TryingOut;
+
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.List;
@@ -19,18 +21,18 @@ class Book {
     public void borrowBook() {
         if (!isBorrowed) {
             isBorrowed = true;
-            System.out.println(STR."The book \"\{title}\" has been borrowed.");
+            System.out.println(StringTemplate.STR."The book \"\{title}\" has been borrowed.");
         } else {
-            System.out.println(STR."The book \"\{title}\" is already borrowed.");
+            System.out.println(StringTemplate.STR."The book \"\{title}\" is already borrowed.");
         }
     }
 
     public void returnBook() {
         if (isBorrowed) {
             isBorrowed = false;
-            System.out.println(STR."The book \"\{title}\" has been returned.");
+            System.out.println(StringTemplate.STR."The book \"\{title}\" has been returned.");
         } else {
-            System.out.println(STR."The book \"\{title}\" was not borrowed.");
+            System.out.println(StringTemplate.STR."The book \"\{title}\" was not borrowed.");
         }
     }
 
@@ -121,7 +123,7 @@ public class Exercise4 {
         } else {
             for (Book book : books) {
                 String status = book.isBorrowed() ? "Borrowed" : "Available";
-                System.out.println(STR."Title: \{book.getTitle()}, Author: \{book.getAuthor()}, ISBN: \{book.getISBN()}, Status: \{status}");
+                System.out.println(StringTemplate.STR."Title: \{book.getTitle()}, Author: \{book.getAuthor()}, ISBN: \{book.getISBN()}, Status: \{status}");
             }
         }
     }
@@ -146,7 +148,7 @@ public class Exercise4 {
                 if (!book.isBorrowed()) {
                     book.borrowBook();
                 } else {
-                    System.out.println(STR."Sorry, \"\{book.getTitle()}\" is already borrowed.");
+                    System.out.println(StringTemplate.STR."Sorry, \"\{book.getTitle()}\" is already borrowed.");
                 }
                 return;
             }
@@ -165,7 +167,7 @@ public class Exercise4 {
         boolean hasBorrowedBooks = false;
         for (Book book : books) {
             if (book.isBorrowed()) {
-                System.out.println(STR."- \{book.getTitle()} by \{book.getAuthor()}");
+                System.out.println(StringTemplate.STR."- \{book.getTitle()} by \{book.getAuthor()}");
                 hasBorrowedBooks = true;
             }
         }
@@ -197,7 +199,7 @@ public class Exercise4 {
         boolean hasAvailableBooks = false;
         for (Book book : books) {
             if (!book.isBorrowed()) {
-                System.out.println(STR."- \{book.getTitle()} by \{book.getAuthor()}");
+                System.out.println(StringTemplate.STR."- \{book.getTitle()} by \{book.getAuthor()}");
                 hasAvailableBooks = true;
             }
         }

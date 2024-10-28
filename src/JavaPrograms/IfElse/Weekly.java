@@ -1,3 +1,5 @@
+package JavaPrograms.IfElse;
+
 import java.util.Scanner;
 
 public class Weekly {

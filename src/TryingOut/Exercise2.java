@@ -1,3 +1,5 @@
+package TryingOut;
+
 import java.util.Arrays;
 
 public class Exercise2 {

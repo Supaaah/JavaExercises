@@ -1,3 +1,5 @@
+package JavaPrograms.IfElse;
+
 import java.util.Scanner;
 
 public class CharTypeChecker {
@@ -9,12 +11,8 @@ public class CharTypeChecker {
     }
 
     private static String getCharacterType(char ch) {
-        if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) {
-            return "The character is an alphabet.";
-        } else if (ch >= '0' && ch <= '9') {
-            return "The character is a digit.";
-        } else {
-            return "The character is a special character.";
-        }
+        if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) return "The character is an alphabet.";
+        else if (ch >= '0' && ch <= '9') return "The character is a digit.";
+        else return "The character is a special character.";
     }
 }

@@ -1,3 +1,5 @@
+package JavaPrograms.IfElse;
+
 import java.util.Scanner;
 
 public class InsuranceChecker {
@@ -27,8 +29,7 @@ public class InsuranceChecker {
 
 
     public static boolean isEligibleByGenderAndAge(String gender, int age) {
-        return (gender.equals("male") && age > 30) ||
-                (gender.equals("female") && age > 25);
+        return (gender.equals("male") && age > 30) || (gender.equals("female") && age > 25);
     }
 
 }

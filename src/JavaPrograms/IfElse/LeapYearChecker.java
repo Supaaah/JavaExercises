@@ -1,3 +1,5 @@
+package JavaPrograms.IfElse;
+
 import java.util.Scanner;
 
 public class LeapYearChecker {
@@ -11,11 +13,8 @@ public class LeapYearChecker {
         scanner.close();
         boolean isLeapYear = checkLeapYear(year);
 
-        if (isLeapYear) {
-            System.out.println(year + " is a Leap Year.");
-        } else {
-            System.out.println(year + " is not a Leap Year.");
-        }
+        if (isLeapYear) System.out.println(year + " is a Leap Year.");
+        else System.out.println(year + " is not a Leap Year.");
     }
 
     public static boolean checkLeapYear(int year) {

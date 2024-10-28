@@ -1,3 +1,5 @@
+package JavaPrograms.IfElse;
+
 import java.util.Scanner;
 
 public class AlphabetChecker {
@@ -6,11 +8,8 @@ public class AlphabetChecker {
         System.out.print("Enter a character: ");
         char ch = scanner.next().charAt(0);
 
-        if (isAlphabet(ch)) {
-            System.out.println("The character is an alphabet.");
-        } else {
-            System.out.println("The character is not an alphabet.");
-        }
+        if (isAlphabet(ch)) System.out.println("The character is an alphabet.");
+        else System.out.println("The character is not an alphabet.");
     }
 
     private static boolean isAlphabet(char ch) {

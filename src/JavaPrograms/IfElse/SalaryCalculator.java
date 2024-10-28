@@ -1,3 +1,5 @@
+package JavaPrograms.IfElse;
+
 import java.util.Scanner;
 
 public class SalaryCalculator {
@@ -5,7 +7,7 @@ public class SalaryCalculator {
     private static final int EXPERIENCED_YEARS = 10;
 
     public static double calculateSalary(String gender, int yearsOfService, String qualification) {
-        boolean isExperienced = yearsOfService >= EXPERIENCED_YEARS; //true if > 10 false < 10
+        boolean isExperienced = yearsOfService >= EXPERIENCED_YEARS; //true if >= 10 false < 10
 
         if (gender.equalsIgnoreCase("Male")) {
             if (qualification.equalsIgnoreCase("Post Graduate")) {
@@ -30,7 +32,7 @@ public class SalaryCalculator {
 
         System.out.print("Enter Years of Service: ");
         int yearsOfService = scanner.nextInt();
-        scanner.nextLine();
+        scanner.nextLine();//consume to avoid trap
 
         System.out.print("Enter Qualification (Graduate/Post Graduate): ");
         String qualification = scanner.nextLine();

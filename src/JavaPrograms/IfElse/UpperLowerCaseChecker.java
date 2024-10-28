@@ -1,3 +1,5 @@
+package JavaPrograms.IfElse;
+
 import java.util.Scanner;
 
 public class UpperLowerCaseChecker {
@@ -10,13 +12,9 @@ public class UpperLowerCaseChecker {
     }
 
     public static String LowerUpper(char ch) {
-        if (ch >= 'A' && ch <= 'Z') {
-            return "The alphabet is uppercase.";
-        } else if (ch >= 'a' && ch <= 'z') {
-            return "The alphabet is lowercase.";
-        } else {
-            return "The character is not an alphabet.";
-        }
+        if (ch >= 'A' && ch <= 'Z') return "The alphabet is uppercase.";
+        else if (ch >= 'a' && ch <= 'z') return "The alphabet is lowercase.";
+        else return "The character is not an alphabet.";
     }
 }
 

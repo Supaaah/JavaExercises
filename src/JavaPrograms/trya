@@ -25,20 +25,20 @@ If Statements
 10. Write a program to check whether a character is uppercase or lowercase alphabet//
 11. Write a program to input week number and print weekday //
 12. Write a program to input month number and print month Name//
-13. A company insures its drivers in the following cases:
+13. A company insures its drivers in the following cases://
 a. If the driver is married
 b. If the driver is unmarried, male & above 30 years of age
 c. If the driver is unmarried, female & above 25 years of age
-14. Write a program to calculate the salary as per the following table
+14. Write a program to calculate the salary as per the following table //
 
 
 Looping Statement
-1. Write a program to print all alphabets from a to z
-2. Write a program to print reverse alphabets from Z to A
-3. Write a program to print all even numbers between 1 to 100
-4. Write a program to print all odd number between 1 to 100
-5. Write a program to reverse the given Digits
-6. Write a program to sum of its Digits
+1. Write a program to print all alphabets from a to z //
+2. Write a program to print reverse alphabets from Z to A //
+3. Write a program to print all even numbers between 1 to 100 //
+4. Write a program to print all odd number between 1 to 100 //
+5. Write a program to reverse the given Digits //
+6. Write a program to sum of its Digits //
 7. Write Java program to count total number of words in a string
 8. Write Java program to print used different characters (letters) in a string
 

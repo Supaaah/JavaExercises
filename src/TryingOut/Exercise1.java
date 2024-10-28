@@ -1,3 +1,5 @@
+package TryingOut;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -50,7 +52,7 @@ public class Exercise1 {
     private static List<Integer> getValues(Scanner scanner, int numberOfValues) {
         List<Integer> values = new ArrayList<>();
         for (int i = 0; i < numberOfValues; i++) {
-            int value = getNumberInput(scanner, STR."Enter Number \{i + 1}: ");
+            int value = getNumberInput(scanner, StringTemplate.STR."Enter Number \{i + 1}: ");
             values.add(value);
         }
         return values;
@@ -87,6 +89,6 @@ public class Exercise1 {
     }
 
     private static void displayResult(int result) {
-        System.out.println(STR."Result is = \{result}");
+        System.out.println(StringTemplate.STR."Result is = \{result}");
     }
 }

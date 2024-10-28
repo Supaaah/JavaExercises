@@ -1,3 +1,5 @@
+package JavaPrograms.IfElse;
+
 import java.util.Scanner;
 
 public class NumberCheck {
@@ -9,12 +11,8 @@ public class NumberCheck {
     }
 
     public static String checkNumberSign(int number) {
-        if (number > 0) {
-            return "The number is positive.";
-        } else if (number < 0) {
-            return "The number is negative.";
-        } else {
-            return "The number is zero.";
-        }
+        if (number > 0) return "The number is positive.";
+        else if (number < 0) return "The number is negative.";
+        else return "The number is zero.";
     }
 }

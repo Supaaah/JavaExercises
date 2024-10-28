@@ -1,9 +1,14 @@
+package JavaPrograms.IfElse;
+
 import java.util.Scanner;
 
 public class OddOrEven {
 
     public static String checkOddOrEven(int number) {
-        return (number % 2 == 0) ? "The number is even." : "The number is odd.";
+        //return (number % 2 == 0) ? "The number is even." : "The number is odd.";
+        if(number%2==0) return "The number is even.";
+        else  return  "The number is odd.";
+
     }
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

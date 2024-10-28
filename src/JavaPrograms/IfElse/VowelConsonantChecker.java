@@ -1,3 +1,5 @@
+package JavaPrograms.IfElse;
+
 import java.util.Scanner;
 
 public class VowelConsonantChecker {
@@ -9,12 +11,8 @@ public class VowelConsonantChecker {
     }
 
     public static String checkVowelConsonant(char ch){
-        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
-            return ch + " is a vowel.";
-        } else if ((ch >= 'a' && ch <= 'z')) {
-            return ch + " is a consonant.";
-        } else {
-            return "Input is not a valid alphabet.";
-        }
+        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') return ch + " is a vowel.";
+        else if ((ch >= 'a' && ch <= 'z')) return ch + " is a consonant.";
+        else return "Input is not a valid alphabet.";
     }
 }

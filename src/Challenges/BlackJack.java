@@ -1,3 +1,6 @@
+import java.util.Scanner;
+
+import static Challenges.Javapedia.scan;
 
 public class BlackJack{
     
@@ -36,7 +39,7 @@ public class BlackJack{
         int randomNum = (int) (Math.random() * 13) + 1;
         return randomNum;
     }
-    public static void deterMineWinner(int total, int dealerTotal){
+    public static String deterMineWinner(int total, int dealerTotal){
          while(true){
             String choice = hitOrStay();
             if (choice.equalsIgnoreCase("stay")) {
@@ -172,7 +175,7 @@ public class BlackJack{
     public static String hitOrStay(){
         
         System.out.println("Would you like to hit or stay?");
-        String response = scan.nextLine()
+        String response = scan.nextLine();
         
         while (!(response.equalsIgnoreCase("hit") || response.equalsIgnoreCase("stay"))) {
             System.out.println("Please write hit or stay");
