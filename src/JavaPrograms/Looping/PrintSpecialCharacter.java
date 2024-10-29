@@ -9,8 +9,8 @@ public class PrintSpecialCharacter{
         String sentence = scanner.nextLine();
         for(int i = 0; i<sentence.length();i++){
             char ch = sentence.charAt(i);
-            if(!((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) && !(ch >= '0' && ch <= '9')){
-                System.out.println(ch);
+            if(!((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) && !(ch >= '0' && ch <= '9') && !(ch == ' ')){
+                System.out.print(ch + " ");
             }
         }
     }
