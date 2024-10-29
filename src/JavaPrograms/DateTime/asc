@@ -1,0 +1,62 @@
+import java.time.LocalDate;
+
+public class AddYearsToDate {
+    public static void main(String[] args) {
+        LocalDate today = LocalDate.now();
+        LocalDate futureDate = today.plusYears(5);
+        System.out.println("Date after 5 years: " + futureDate);
+    }
+}
+import java.time.LocalDate;
+
+public class AddMonthsToDate {
+    public static void main(String[] args) {
+        LocalDate today = LocalDate.now();
+        LocalDate futureDate = today.plusMonths(3);
+        System.out.println("Date after 3 months: " + futureDate);
+    }
+}
+import java.time.LocalDate;
+
+public class SubtractDaysFromDate {
+    public static void main(String[] args) {
+        LocalDate today = LocalDate.now();
+        LocalDate pastDate = today.minusDays(15);
+        System.out.println("Date 15 days ago: " + pastDate);
+    }
+}
+import java.time.LocalDate;
+
+public class AddDaysToDate {
+    public static void main(String[] args) {
+        LocalDate today = LocalDate.now();
+        LocalDate futureDate = today.plusDays(20);
+        System.out.println("Date after 20 days: " + futureDate);
+    }
+}
+import java.time.LocalDate;
+
+public class ParseDateComponents {
+    public static void main(String[] args) {
+        LocalDate today = LocalDate.now();
+        int year = today.getYear();
+        int month = today.getMonthValue();
+        int day = today.getDayOfMonth();
+
+        System.out.println("Year: " + year);
+        System.out.println("Month: " + month);
+        System.out.println("Day: " + day);
+    }
+}
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
+public class ParseDateFromString {
+    public static void main(String[] args) {
+        String dateString = "2024-10-29";
+        LocalDate date = LocalDate.parse(dateString);
+        System.out.println("Year: " + date.getYear());
+        System.out.println("Month: " + date.getMonthValue());
+        System.out.println("Day: " + date.getDayOfMonth());
+    }
+}

@@ -1,3 +1,5 @@
+package JavaPrograms.Looping;
+
 import java.util.Scanner;
 
 public class WordCounter{
