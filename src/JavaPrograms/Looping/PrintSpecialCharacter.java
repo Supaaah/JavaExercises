@@ -1,18 +1,19 @@
-import java.util.Scanner;
+public class UniqueCharacters{
+    
+    public static void main(String [] args){
+        String sentence = "Hi My name is Reggie!";
 
-public class PrintSpecialCharacter{
-    
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-    
-        System.out.print("Enter a sentence with special character: ");
-        String sentence = scanner.nextLine();
-        for(int i = 0; i<sentence.length();i++){
+        for(int i =0;i<sentence.length();i++){
             char ch = sentence.charAt(i);
-            if(!((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) && !(ch >= '0' && ch <= '9') && !(ch == ' ')){
-                System.out.print(ch + " ");
+            boolean isUnique = true;
+            for(int j=0;j<i;j++){
+                if(sentence.charAt(j) == ch){
+                    isUnique = false;
+                }
+            }
+            if(isUnique){
+            System.out.print(ch+" ");
             }
         }
     }
-    
 }
